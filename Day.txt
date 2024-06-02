@@ -23,7 +23,7 @@ Attributes-
 target="_main" - used in a(anchor) tag to open link in new tab
 alt="" - used when there is some error for finding image
 height = ""
-weight = ""
+width = ""
 colspan = "" - used to merge columns
 rowspan = "" - used to merge rows
 type="disc(default),square,circle" - used in ul tags 
