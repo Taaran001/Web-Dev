@@ -1,0 +1,31 @@
+Day 1,2 - 
+Tags - HTML, head, title, body, h1 to h6, p(paragraph), hr(horiztonal), br(break), a(anchor), img(image), b(bold), i(itallic), u(underline), big, small, sup, sub, pre, header, main , section, aside, article, footer, table, tr(table row), td(table data), th(table heading), caption, ul(unroderd list), ol(orderd list), dl(defined list)
+...
+title- used to create web name
+hr - used to make horiztonal line
+br - used to seperate or create new line
+a - used to make a link
+img - used to show image 
+sup - to show H^2O - 2 ko upper le jaayega
+sub - 2 ok neeche le jaayega
+pre - used to crete user define spaces
+section- used to create different sections on site for different elements
+aside - used to show less usefull content on website e.g- ads
+article - used to print articles
+footer - used in the end of web e.g - contact us etc stuff
+tr - used in rows of table
+td - used to insert data in table
+th - used for heading of table
+caption - used in table tags for better accessibility
+
+
+Attributes- 
+target="_main" - used in a(anchor) tag to open link in new tab
+alt="" - used when there is some error for finding image
+height = ""
+weight = ""
+colspan = "" - used to merge columns
+rowspan = "" - used to merge rows
+type="disc(default),square,circle" - used in ul tags 
+type="1(default),I,i,A,a" - used in ol tags
+start="" = used in ol tags and type attribute
