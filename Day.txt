@@ -1,4 +1,4 @@
-Day 1,2 - 
+Day 1,2(line 2-225) - 
 Tags - HTML, head, title, body, h1 to h6, p(paragraph), hr(horiztonal), br(break), a(anchor), img(image), b(bold), i(itallic), u(underline), big, small, sup, sub, pre, header, main , section, aside, article, footer, table, tr(table row), td(table data), th(table heading), caption, ul(unroderd list), ol(orderd list), dl(defined list)
 ...
 title- used to create web name
