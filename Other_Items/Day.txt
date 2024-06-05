@@ -1,0 +1,81 @@
+*Day 1,2* 
+
+Tags -
+HTML, head, title, body, h1 to h6, p(paragraph), hr(horizontal), br(break), a(anchor), img(image), b(bold), i(italic), u(underline), big, small, sup, sub, pre, header, main , section, aside, article, footer, table, tr(table row), td(table data), th(table heading), caption, ul, (unordered list), ol(order list), dl(defined list)...
+
+Attributes- 
+target="_main" - used in a(anchor) tag to open link in new tab
+alt="" - used when there is some error for finding image
+height = ""
+width = ""
+colspan = "" - used to merge columns
+rowspan = "" - used to merge rows
+type="disc(default),square,circle" - used in ul tags 
+type="1(default),I,i,A,a" - used in ol tags
+start="" - used in ol tags and type attribute
+
+Remember -
+title- used to create web name
+hr - used to make horizontal line
+br - used to separate or create new line
+a - used to make a link
+img - used to show image 
+sup - to show H^2O - 2 ko upper le jaayega
+sub - 2 ok neeche le jaayega
+pre - used to crete user define spaces
+section- used to create different sections on site for different elements
+aside - used to show less useful content on website e.g- ads
+article - used to print articles
+footer - used in the end of web e.g - contact us etc stuff
+tr - used in rows of table
+td - used to insert data in table
+th - used for heading of table
+caption - used in table tags for better accessibility
+
+
+
+*Day 3*
+
+Tags - 
+form, input, label, textarea, select, option, span, div
+
+Attributes- 
+action="" - used in forms 
+id=""
+name="" - used in input tags
+value="" - used in input tags
+for="" - used in label tags
+row="" - used in textarea tags
+cols="" - used in textarea tags
+method="" - used in form tag to define how data is sent
+placeholder="" - used in input tags
+required - used in input tags
+autofocus - used in input tags
+
+Remember -
+textarea - used in forms to create box to enter data
+select - used in forms to select any 1 option from given different options
+option - this tag used in select to give different items
+
+
+
+*Day 4*
+Tags - 
+link,video, audio, iframe
+
+Attributes - 
+class - it used to give any element any id, we can give same to multiple element
+id - it used to give any element any unique id, we cannot give same id to other elements
+href - used to give link in tags like - link,img etc
+src="" - give source of video 
+controls - give controls to video tag
+autoplay
+loop
+muted
+poster="" - we can give poster to video tag
+
+Remember - 
+In CSS before ID name we have to use "#" and in class we have to use "."
+iframe - used to embed any website in our website
+
+

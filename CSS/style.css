@@ -1,3 +1,15 @@
 body{
     background-color: blueviolet;
 }
+
+.red{
+    color: red;
+}
+
+.bg-yellow{
+    background-color: yellowgreen;
+}
+
+#firstdiv{
+    background-color: green;
+}
