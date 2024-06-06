@@ -1,4 +1,4 @@
-*Day 1,2* 
+*Day 1,2,3* 
 
 Tags -
 HTML, head, title, body, h1 to h6, p(paragraph), hr(horizontal), br(break), a(anchor), img(image), b(bold), i(italic), u(underline), big, small, sup, sub, pre, header, main , section, aside, article, footer, table, tr(table row), td(table data), th(table heading), caption, ul, (unordered list), ol(order list), dl(defined list)...
@@ -34,7 +34,7 @@ caption - used in table tags for better accessibility
 
 
 
-*Day 3*
+*Day 4*
 
 Tags - 
 form, input, label, textarea, select, option, span, div
@@ -59,7 +59,7 @@ option - this tag used in select to give different items
 
 
 
-*Day 4*
+*Day 5*
 Tags - 
 link,video, audio, iframe
 
@@ -79,3 +79,15 @@ In CSS before ID name we have to use "#" and in class we have to use "."
 iframe - used to embed any website in our website
 
 
+
+*Day 6*
+Semantic Tags, Entities, code tag & more
+Tags - 
+Code, blockquote, q, font, centre
+
+Remember - 
+&lt;  for <
+&gt;  for >
+&amp; for &
+&nbsp; for a non-breaking space
+&copy; for ©
