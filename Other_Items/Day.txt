@@ -91,3 +91,9 @@ Remember -
 &amp; for &
 &nbsp; for a non-breaking space
 &copy; for ©
+
+*Day 7,8*
+Today nothing much but learned why css used and other stuff related to css etc,
+internal css,external css,inline css
+
+
