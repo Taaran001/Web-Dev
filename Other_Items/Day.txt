@@ -97,3 +97,19 @@ Today nothing much but learned why css used and other stuff related to css etc,
 internal css,external css,inline css
 
 
+
+*Day 9*
+Types of selector 
+1)Internal Selector
+2)Class Selector
+3)ID Selector
+4)Child Selector
+5)Descendant Selector
+6)Universal Selector
+7)Pseudo Selector
+
+Box Model
+Margin - It create space around the main content 
+Padding - It create space inside the main content 
+Border - 
+Box-seizing - content + border + padding = height 
