@@ -113,3 +113,26 @@ Margin - It create space around the main content
 Padding - It create space inside the main content 
 Border - 
 Box-seizing - content + border + padding = height 
+
+*Day 10*
+font-family
+text-align - centre
+font-weight
+font-style - italic
+text-decoration - underline
+text-decoration-color 
+font-size
+line-height
+letter-spacing
+text-transform - capitalize
+text-indent
+text-overflow - ellipsis
+overflow - hidden
+word-break - break-all
+
+Colour keywords
+Hex colour code
+RGB
+RGBA
+HSL
+HSLA
