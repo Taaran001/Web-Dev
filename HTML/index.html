@@ -596,3 +596,144 @@
 </html> 
 -->
 
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS specificity</h1>
+        <ul>
+            <li>Universal Selector: 0</li>
+                <li>Element selectors and pseudo-elements: 1</li>
+                <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+                <li>ID selectors: 100</li>
+                <li>Inline styles: 1000</li>
+        </ul>
+    </div>
+</body>
+</html>
+-->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black; 
+            /* width: 757px; */
+            text-align: center;
+            width: 50vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        .container{
+            border: 2px solid black; 
+            /* width: 757px; */
+            text-align: center;
+            width: 50vw;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            height: 50vh;
+            font-size: 18px;
+            margin: 23px auto;
+        }
+        .container p:first-child{
+            font-size: 2em;
+        }
+        .container p{
+             font-size: 2rem; /* root font size */
+        }
+
+        .myfont{
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 75vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is BOX
+    </div>
+    <div class="container">
+        <p>This is Container</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate reiciendis quis?
+        </p>
+    </div>
+    <div class="myfont">
+        I am another container
+    </div>
+</body>
+</html> 
+-->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .class{
+            border: 2px solid blue;
+            /* display: inline; */
+            /* display: none; */
+            /* visibility: hidden; */
+            display: inline-block;
+            width: 344px;
+            margin: 45px;
+            padding: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="class">
+        I am a box
+    </div>
+    <div class="class">
+        This is also a box
+    </div>
+    <span>This is</span>
+    <span>Span</span>
+</body>
+
+</html>
+ -->
+
