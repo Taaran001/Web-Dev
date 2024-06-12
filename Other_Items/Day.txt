@@ -162,3 +162,28 @@ rem - root font size
 Display Properties - 
 display = none, inline-block, inline
 visibility = hidden
+
+
+
+*Day 12*
+
+Shadow -
+box-shadow: h-offset v-offset blur spread color;
+text-shadow: h-offset v-offset blur color;
+
+Outline -
+outline: width style color;
+
+CSS Lists - 
+list-style-type: 
+list-style-position:
+list-style: 
+list-style-type: "😍";
+
+Overflow -
+overflow: value;
+white-space: nowrap;
+text-overflow: ellipsis;
+
+
+
