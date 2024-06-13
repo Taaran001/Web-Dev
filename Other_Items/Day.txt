@@ -187,3 +187,8 @@ text-overflow: ellipsis;
 
 
 
+Position Properties CSS - (didn't understand much of anything....)
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
