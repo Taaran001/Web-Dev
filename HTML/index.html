@@ -830,6 +830,7 @@
 </html> 
 -->
 
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -894,4 +895,234 @@
 </body>
 
 </html>
+ -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: Blue;
+            --seccolor: rgb(92, 92, 185);
+            --defpad: 23px;
+            --defop: 0.5;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            padding: var(--defpad);
+            opacity: var(--defop);
+            list-style-type: none;
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            --color: rgb(156, 82, 185);
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptates dolorum tempore
+        harum voluptas aspernatur eaque, eligendi totam perspiciatis quidem id libero quasi ut asperiores dolorem minus
+        quisquam saepe voluptatem quibusdam porro cupiditate accusamus! Consectetur ipsa neque quasi minus animi ab
+        recusandae, dolore beatae quas!</div>
+</body>
+
+</html> 
+-->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+
+
+                background-color: blue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation: portrait){
+            body{
+                border: 10px solid powderblue;
+            }
+        }
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: darkkhaki;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey i am red boy guy
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
+ -->
+
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        p{
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="cards">
+        <img src="/Other_Items/photo.jpg" alt="photu" width="230px">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis praesentium quia sunt quod, hic aliquam id excepturi, quisquam maxime nobis voluptatem ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dignissimos. Incidunt iure blanditiis debitis ab delectus porro odio quod in ratione, doloremque modi distinctio nulla quae, omnis repellendus est dolorem quo eos, deserunt sint voluptates consequuntur aliquid sequi? Hic ratione eaque corrupti amet aliquid? Corrupti vel facilis voluptatum nulla est illo laborum dicta enim iste, vero accusamus libero excepturi ab aliquid nemo cupiditate velit eum quaerat facere consequatur autem recusandae possimus iusto. Quas aliquam voluptate neque recusandae error facilis eveniet perferendis, sequi quam, vero eos sint voluptates maxime eius aut incidunt dignissimos cupiditate officiis dolor a molestiae deleniti! Ut, placeat nostrum reprehenderit totam est, porro voluptas blanditiis nesciunt aspernatur eligendi ipsa? Recusandae sapiente cum dolorum, soluta in quis magni nemo alias culpa autem aliquam temporibus at nesciunt libero velit a atque rem excepturi ullam mollitia repudiandae placeat provident. Corrupti dicta deleniti tenetur iusto necessitatibus suscipit, fuga veniam dolore eveniet, magni harum eos at maxime adipisci voluptas distinctio dolores. Similique ex molestias tenetur, minima consequatur possimus sint esse delectus dicta harum reprehenderit quasi enim voluptate doloremque vero ipsum recusandae velit accusamus, dignissimos, veniam culpa quisquam. Porro totam temporibus veritatis itaque fuga, expedita maxime sapiente error libero nostrum ducimus dolores voluptatibus ipsum ab? Hic, doloremque. Consequuntur dolores, id molestiae minus harum dolore? Iusto ratione doloremque repellat iure id illum, enim aliquam voluptatibus recusandae veniam dolores aspernatur!</p>
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+ </body>
+ </html> 
+ -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+background-color: red;
+        } 
+        .box::first-line{
+            color: yellow;
+        } 
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        p, a, .box, [data-color="primary"]{
+            margin-top: 43px;
+        } 
+        
+        .box:nth-child(odd){
+            background-color: blue;
+        } 
+
+        .box:nth-last-child(1){
+            background-color: red;
+        } */
+        .boxes::before {
+            content: "ok ok ok";
+            color: blue;
+        }
+
+        .boxes::after {
+            content: "acha acha acha";
+            color: red;
+        }
+
+        ::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter {
+            font-size: 23px;
+            color: peru;
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed possimus
+            ipsum accusamus deserunt? Exercitationem quia rem illum blanditiis nobis architecto qui et. Recusandae et
+            dicta sint, sunt vero porro harum debitis autem aut incidunt quia, assumenda totam nobis quam ratione
+            similique repellat error nostrum laborum!</div>
+        <div class="box">Hey i am a Box</div>
+        <div class="box">Hey i am a Box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
+ -->
 

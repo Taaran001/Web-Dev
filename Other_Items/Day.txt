@@ -187,8 +187,33 @@ text-overflow: ellipsis;
 
 
 
+*Day 13*
+
 Position Properties CSS - (didn't understand much of anything....)
 position: relative;
 position: absolute;
 position: fixed;
 position: sticky;
+
+
+
+*Day 14*
+
+CSS Variables -
+...
+Media Queries - 
+@media only screen and (max-width: 455px){}
+
+Float & Clear -
+float: right;
+clear: right;
+
+More CSS Selectors - 
+::first-line
+attribute selector
+:nth-last-child()
+::before
+:after 
+::selection 
+::first-letter
+
