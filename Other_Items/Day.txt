@@ -217,3 +217,38 @@ attribute selector
 ::selection 
 ::first-letter
 
+
+
+*Day 15*
+
+Nothing :(
+
+
+
+*Day 16*
+
+FlexBox
+I - On container
+1) align-items
+2) align-content
+3) flex-direction
+4) flex-wrap
+5) flex-flow
+6) gap
+
+II - Inside container
+7) flex-grow
+8) flex-shrink
+9) order
+10) align-self
+
+CSS Grid -
+Didn't understand
+
+CSS Transform - 
+1)rotate
+2)scale
+3)translate
+4)skew
+
+
