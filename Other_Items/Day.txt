@@ -252,3 +252,36 @@ CSS Transform -
 4)skew
 
 
+
+*Day 17*
+
+CSS Grid - 
+1)grid-template-columns
+2)grid-gap
+3)grid-auto-rows
+4)column-gap
+5)grid-row-start
+6)grid-row-end
+
+CSS Transition Property - 
+1)transition-property
+2)transition-duration
+3)transition-timing-function
+4)transition-delay
+
+CSS Animation - 
+1)animation: name duration timing-function delay iteration-count direction fill-mode;
+2)@keyframes __ {
+            from{}
+            to{}
+            }
+
+Object fit, Object Position & Background image -
+1)object-fit
+2)object-position
+3)background-image: url()
+4)background-position
+5)background-repeat
+
+
+
