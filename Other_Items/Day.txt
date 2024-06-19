@@ -285,3 +285,13 @@ Object fit, Object Position & Background image -
 
 
 
+*Day 18*
+
+CSS Filters - 
+1)filter: blur()
+2)filter: brightness()
+3)filter: contrast()
+4)filter: grayscale()
+5)filter:sepia()
+6)filter: opacity()
+7)filter: invert()
