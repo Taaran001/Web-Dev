@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: gray;
+    padding: 30px 0px;
+}
+.box {
+    background-color: #fff;
+    margin: auto;
+    width: 900px;
+    height: 1061px;
+    border-radius: 13px;
+}
+
+header {
+    top: 70px;
+    left: 330px;
+
+    position: absolute;
+    display: flex;
+    font-family: Inter;
+    text-align: left;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+h1 {
+    font-size: 57px;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+h3 {
+    align-content: center;
+    color: #1342EA;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+
+}
