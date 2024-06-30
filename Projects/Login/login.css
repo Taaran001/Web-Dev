@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("/Other_Items/8247.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;    
+}
+
+section{
+    position: relative;
+    width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 2555, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 3rem;
+}
+
+h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -2px;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: black;
+}
+.inputbox input{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    padding-left: 25px;
+    color: white;
+}
+.forgot{
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+     
+}
+.forgot label{
+    display: flex;
+    align-items: center;
+}
+.forgot label input{
+    margin-right: 3px;
+}
+.forgot a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transform: all 0.4s ease;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transform: all 0.4s ease;
+
+}
+button:hover{
+    background-color: #8c7aed;
+    color: white;
+}
+.register{
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+} 
