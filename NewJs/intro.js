@@ -1,25 +1,3 @@
-// alert("Hello this is alert")
-
-// console.log("Code is running...")
-// console.log("Code is ok...")
-// console.log("Code is nice...")
-
-// var a = prompt("Enter your number")
-// var isTrue = confirm("Arre you sure")
-// if(isTrue){
-//     console.log("sure..")
-// }
-
-// else{
-//     console.log("Yess")
-// }
-
-// console.log("Your number is " + a)
-
-// document.title = "Hello changing title from js"
-
-// document.body.style.backgroundColor = "red"
-
 console.log("Hey this is Js");
 
 var a = 5; // var is global variable 
@@ -62,3 +40,16 @@ console.log(o)
 
 o.salary="10cr";
 console.log(o)
+
+
+
+
+
+
+
+const EId = 22
+Email = "okok@gmail.com"
+Password = "0123"
+City = "Delhi"
+
+console.table([EId, Email, Password, City]);
