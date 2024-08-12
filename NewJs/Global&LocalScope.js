@@ -1,7 +1,7 @@
 let a = 300
 if(true){
-    let a = 10 
-    const b = 20 
+    let a = 10
+    const b = 20
     console.log(a);
 }
 
@@ -46,3 +46,4 @@ const addTwo = function(num){
     return num+2
 }
 addTwo(5)
+
