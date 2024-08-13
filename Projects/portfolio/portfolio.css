@@ -293,6 +293,13 @@ header a{
     margin-top: 10%;
 }
 
+<<<<<<< HEAD
+=======
+.sec4{
+
+}
+
+>>>>>>> origin/main
 .container{
     display: flex;
     flex-direction: row;
@@ -305,6 +312,7 @@ header a{
 }
 
 .Pbox{
+<<<<<<< HEAD
     margin-top: 2%;
     border: 1px solid rgba(104, 45, 160, 0.658);
     border-radius: 5px;
@@ -410,6 +418,48 @@ header a{
     color: black;
     background-color: white;
 }
+=======
+}
+
+.Pbox video{
+    width: 500px;
+    height: auto;
+}
+
+.Pbox span{
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: smaller;
+    line-height: 0%;
+    margin-bottom: 2px;
+    z-index: 1;
+}
+
+.Pbox span:hover{
+    opacity: 1;
+    padding: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/main
 
 footer{
     width: 60vw;
