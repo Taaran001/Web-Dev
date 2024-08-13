@@ -1,0 +1,103 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+.justify-centre{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 8px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 20px;
+}
+
+/* Apply to all scrollbars */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2e2e2e;  /* Dark background for track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;  /* Darker color for handle */
+    border-radius: 6px; /* Rounded corners for handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #777;  /* Slightly lighter on hover */
+}
+
+/* Handle when active */
+::-webkit-scrollbar-thumb:active {
+    background: #999;  /* Even lighter when active */
+}
+
+/* Apply to horizontal scrollbars */
+::-webkit-scrollbar-thumb:horizontal {
+    background: #555;  /* Darker color for horizontal handle */
+}
+
+/* Track for horizontal scrollbars */
+::-webkit-scrollbar-track:horizontal {
+    background: #2e2e2e;  /* Dark background for horizontal track */
+}
+
+/* Handle for horizontal scrollbars */
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #777;  /* Slightly lighter on hover for horizontal */
+}
+
+/* Handle for horizontal scrollbars when active */
+::-webkit-scrollbar-thumb:horizontal:active {
+    background: #999;  /* Even lighter when active for horizontal */
+}
+
+/* Apply to vertical scrollbars */
+::-webkit-scrollbar-thumb:vertical {
+    background: #555;  /* Darker color for vertical handle */
+}
+
+/* Track for vertical scrollbars */
+::-webkit-scrollbar-track:vertical {
+    background: #2e2e2e;  /* Dark background for vertical track */
+}
+
+/* Handle for vertical scrollbars */
+::-webkit-scrollbar-thumb:vertical:hover {
+    background: #777;  /* Slightly lighter on hover for vertical */
+}
+
+/* Handle for vertical scrollbars when active */
+::-webkit-scrollbar-thumb:vertical:active {
+    background: #999;  /* Even lighter when active for vertical */
+}

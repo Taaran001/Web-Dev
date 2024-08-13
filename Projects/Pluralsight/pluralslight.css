@@ -1,0 +1,287 @@
+@import url('https://fonts.cdnfonts.com/css/tt-commons');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 300;
+    background-color: #0d0f12;
+    color: #fff;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#right {
+    flex: 1;
+}
+
+/* sign in  */
+
+#signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#signin .logo {
+    margin-bottom: 8vh;
+    margin-top: 33px;
+}
+
+#signin .logo img {
+    width: 300px;
+}
+
+#signin label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#singin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+input[type=text]{
+    margin-bottom: 20px;
+}
+input[type=text],
+[type=password] {
+    border: 2px solid #cccccc6e;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+#signin .primary-btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#signin ,
+.hr,
+.links {
+    width: 80%;
+}
+
+#signin .links a {
+    display: block;
+    color: #2ea0d6;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#signin .links a:hover{
+    text-decoration:  underline;
+    color: #005685;
+}
+#signin .hr {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.1rem;
+    align-items: center;
+}
+
+#signin .hr .bar {
+    flex: auto;
+    border: none;
+    height: 0.1px;
+    background: #cccccc6e;
+}
+
+/* showcase  */
+
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://app.pluralsight.com/id/img/login-bg.jpg') no-repeat center center / cover;
+    height: 100vh;
+}
+
+#showcase .showcase-text {
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#showcase a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#right .secondary-btn {
+    width: 35%;
+    margin: auto;
+    padding: 12px 1rem;
+    height: auto;
+    display: block;
+    border: 2px solid #cccccc6e;
+    border-radius: 3px;
+    font-weight: 500;
+    background: none;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+#right .secondary-btn:active{
+    width: 32%;
+    margin: auto;
+    padding: 10px 0.9rem;
+    /* height: 49px; */
+}
+
+
+/* footer  */
+
+#main-footer {
+    color: #ccc;
+    text-align: center;
+    padding-inline-start: 0.8rem;
+    max-width: 80%;
+    padding-top: 0%;
+    font-size: 400;
+    font-size: 12px;
+}
+
+#main-footer a {
+    color: #ccc;
+}
+
+#main-footer a:hover {
+    color: #005685;
+    text-decoration: underline;
+}
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #0074ab;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background-color: #005685;
+}
+
+.primary-btn:active {
+    border: 3px solid #0074ab;
+    border-radius: 5px;
+
+}
+
+.secondary-btn {
+    padding: 0.7rem 1rem;
+    width: 80%;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 500;
+    background: rgba(113, 126, 138, 0.25);
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, .95);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.secondary-btn:active {
+    border: 3px solid #0074ab;
+    border-radius: 5px;
+}
+
+.secondary-btn:hover {
+    background: rgba(138, 153, 168, .25);
+}
+
+@media(min-width: 12000px) {
+    #left {
+        flex: 4;
+    }
+
+    #right {
+        flex: 6;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+
+    #signin .logo {
+        margin-bottom: 2vh;
+    }
+
+    #signin .text-input {
+        margin-bottom: 0.7rem;
+    }
+
+    #main-footer {
+        padding-top: 1rem;
+    }
+}

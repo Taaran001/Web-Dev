@@ -1,0 +1,568 @@
+/* .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.UE {
+    height: 56px;
+    cursor: pointer;
+    width: 175px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+}
+
+svg {
+    padding: 0px 4px;
+}
+
+span:first-child {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 70px;
+}
+
+section span img {
+    width: 112px;
+    height: 32px;
+    margin: 0px 25px;
+}
+
+.second {
+    font-size: 24px;
+    width: 900px;
+    text-align: center;
+}
+
+section div button {
+    background-color: #00b6d1;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 292px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+.second {
+    max-width: 55vw;
+    margin: auto;
+}
+
+
+.download {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 0px 10px;
+}
+
+.download :nth-child(2) {
+    font-size: 24px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #5cb85c;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 126px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.item {
+    padding: 23px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.item-lang {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 275px 275px 275px;
+    gap: 25px;
+}
+
+@media screen and (max-width: 1150px) {
+    .grid{ 
+        grid-template-columns: 2FR; a
+    }
+} */
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'popins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("/Other_Items/bg.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+
+}
+
+.main .box {
+    opacity: 0.69;
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    display: flex;
+    max-width: 76vw;
+    margin: 0px 0 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+nav img {
+    color: red;
+    width: 155px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.main nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    padding: 7px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.si-btn{
+    width: 92px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+.si-btn:hover {
+    background-color: rgb(200, 9, 20);
+}
+
+.lang-btn {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    width: 200px;
+    border: 1px solid white;
+    text-align: start;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.hero {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 210px 30px 1800px;
+    gap: 15px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 24px;
+    font-weight: 400px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero-btn {
+    background-color: rgb(229, 9, 20);
+    ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.hero-btn:hover {
+    background-color: rgb(200, 9, 20);
+}
+
+.sep {
+    background-color: rgb(71, 70, 70);
+    height: 7px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.first .Ftxt :nth-child(1){
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+.first .Ftxt :nth-child(2){
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    width: 575px;
+}
+
+.Fimg{
+    position: relative;
+}
+
+.Fimg img{
+    position: relative;
+    z-index: 10;
+    width: 570px;
+}
+
+.Fimg video{
+    position: absolute;
+    top: 73px;
+    right: 83px;
+    height: 384px;
+    width: 411px;
+}
+
+.sep2{
+    margin: 10px 0 0 0;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 78vw;
+    margin: auto;
+    color: white;
+    padding: 70px 0px 0px 60px;
+    margin: 40px 100px 75px 100px;
+    gap: 15px;
+}
+
+.Simg{
+    height: 428px;
+    width: 570px;
+}
+.st{
+    width: 38vw;
+}
+.stbox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 0.1px solid rgb(100, 98, 98);
+    border-radius: 15px;
+    width: 311px;
+    height: 85px;
+    padding: 8px 12px;
+    margin: 0 auto;
+    gap: 15px;
+    top: 1650px;
+    right: 900px;
+    background-color: black;
+}
+
+
+.stbox img{
+    width: 80px;
+    height: 80px;
+}
+.stbox-span span:nth-child(1){
+    width: 164px;
+    height: 21px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+.stbox-span span:nth-child(2){
+    color: #0071Eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    width: 164px;
+    height: 18px;
+    font-weight: 400;
+}
+
+.Stxt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Stxt :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    width: 640px;
+}
+.Stxt :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    width: 570px;
+}
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    
+}
+
+section.third>div {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.third .Ftxt :nth-child(1){
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+.third .Ftxt :nth-child(2){
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    width: 575px;
+}
+
+.Timg{
+    position: relative;
+}
+
+.Timg img{
+    position: relative;
+    z-index: 10;
+    width: 570px;
+}
+.Nvid {
+    position: absolute;
+    top: 0;
+    right: 115px;
+    height: 420px;
+    width: 350px;
+}
+
+.fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 78vw;
+    margin: auto;
+    color: white;
+    padding: 70px 0px 0px 60px;
+    margin: 40px 100px 75px 100px;
+    gap: 15px;
+}
+
+.Fimg{
+    height: 428px;
+    width: 570px;
+}
+.st{
+    width: 38vw;
+}
+
+.Ftxt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Ftxt :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    width: 640px;
+}
+.Ftxt :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    width: 570px;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    padding: 0px 0px 0px 60px;
+    margin: 40px 100px 75px 100px;
+    gap: 10px;
+}
+.FQA{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    padding: 15px 0 20px 0 ;
+}
+
+.faq .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45,45,45);
+    width: 95%;
+    height: 84px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 30px;
+}
+
+.faq .box:hover{
+    background-color: rgb(61, 61, 61);
+}
+
+.faq .box svg{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+footer{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 60vw;
+    margin: auto;
+    padding: 65px 280px 65px 0px;
+}
+.uline{
+    text-decoration: underline;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    cursor: pointer;
+
+}
+footer ul li{
+    list-style-type: none;
+}
+
+footer button{
+    margin: 30px 0;
+    color: white;
+}
+.NI{
+    display: block;
+}
+.question{
+    display: flex;
+    padding: 0px 0px 30px 0px;
+}
