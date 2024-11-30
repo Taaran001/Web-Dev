@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 
-}  
+}
 body{
     background-color: #140439 !important;
     background: linear-gradient(to right, #000, #130F40);
@@ -141,6 +141,8 @@ header a{
     gap: 50px;
 }
 
+
+
 .Himg img{
     margin-top: 5%;
     display: inline-block;
@@ -152,7 +154,7 @@ header a{
 }
 
 .home-text{
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -293,13 +295,6 @@ header a{
     margin-top: 10%;
 }
 
-<<<<<<< HEAD
-=======
-.sec4{
-
-}
-
->>>>>>> origin/main
 .container{
     display: flex;
     flex-direction: row;
@@ -312,7 +307,7 @@ header a{
 }
 
 .Pbox{
-<<<<<<< HEAD
+
     margin-top: 2%;
     border: 1px solid rgba(104, 45, 160, 0.658);
     border-radius: 5px;
@@ -342,7 +337,7 @@ header a{
     font-size: 20px;
     background: linear-gradient(109.6deg, rgb(160, 74, 163) 11.2%, rgba(87, 27, 226, 1) 96.7%);
     border-radius: 8px;
-    
+
 }
 
 
@@ -398,7 +393,7 @@ header a{
     justify-content: center;
     margin-top: 44px;
     margin-left: 10px;
-    
+
 }
 .Lbtn{
     color: #fff;
@@ -418,8 +413,7 @@ header a{
     color: black;
     background-color: white;
 }
-=======
-}
+
 
 .Pbox video{
     width: 500px;
@@ -436,9 +430,10 @@ header a{
     z-index: 1;
 }
 
-.Pbox span:hover{
+.Pbox:hover span{
     opacity: 1;
-    padding: 10%;
+    padding: 5%;
+    font-size: larger;
 }
 
 
@@ -459,7 +454,6 @@ header a{
 
 
 
->>>>>>> origin/main
 
 footer{
     width: 60vw;

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body,main{
+    font-family: "Roboto", serif;
+    width: 100%;
+    height: 100%;
+    /* background-color:whitesmoke; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 45px 65px;
+}
+.nav h2,h4  {
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.nav1 h2{
+    width: 36%;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+.content{
+    margin-top: 75px;
+    padding: 0px 65px;
+}
+.content h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.content h1{
+    font-size: 150px;
+    font-weight: 500;
+    line-height: 150px;
+    letter-spacing: -5px;
+}
+.case{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 65px;
+    margin-top: 200px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.line{
+    height: 2px;
+    width: 120px;
+    background-color: black;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 65px;
+    /* gap: 80px; */
+}
+.elem-img img{
+    /* background-color: red; */
+    height: 800px;
+    width: auto;
+}
+.bottom{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.btm-left h2{
+    font-size: 36px;
+    font-weight: 400;
+}
+.btm-left h4{
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #969696 ;
+}
+.bottom img{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: #fff;
+    font-weight: 800;
+}
+.bottom img:hover{
+    filter: invert(1);
+}

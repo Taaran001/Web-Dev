@@ -121,7 +121,7 @@ section div button {
 }
 
 @media screen and (max-width: 1150px) {
-    .grid{ 
+    .grid{
         grid-template-columns: 2FR; a
     }
 } */
@@ -147,7 +147,7 @@ body {
 }
 
 .main {
-    background-image: url("/Other_Items/bg.jpg");
+    background-image: url("/webdev/Other_Items/bg.jpg");
     height: 100vh;
     position: relative;
     background-position: center center;
@@ -413,7 +413,7 @@ section.first>div {
     max-width: 70vw;
     margin: auto;
     color: white;
-    
+
 }
 
 section.third>div {
