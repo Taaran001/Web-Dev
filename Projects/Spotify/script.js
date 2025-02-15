@@ -5,7 +5,7 @@ let songs
 
 
 function secondsToMinutesSeconds(seconds) {
-    if (isNaN(seconds) || seconds < 0) {
+    if (isNaN(seconds) || secon ds < 0) {
         return "00:00";
     }
 

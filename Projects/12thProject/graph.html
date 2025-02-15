@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuclear Technology Changes</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-image:url(https://i.pinimg.com/originals/c9/91/72/c99172c17b83d3c620b997858351b2a5.gif);
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			text-align: center;
+		}
+        .container2 {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			text-align: center;
+		}
+        .container3 {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.back{
+			width:75px ;
+			height: 35px;
+			border:2px solid #0e5079 ;
+			border-radius: 32px;
+			color:#0e5079;
+			background-color: white;
+			font-size: 25px;
+		}
+		.back:hover{
+			width:95;
+			height: 45;
+			
+			color: white;
+			background-color:#0e5079;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<input class="back" type="button" value="&#8592" onclick="history.back()">
+			</form>
+		<h1>Changes in Nuclear Technology from 1900 to 2020</h1>
+		<canvas id="myChart"></canvas><p>Years</p>
+        
+	</div>
+	<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["1900", "1910", "1920", "1930", "1940", "1950", "1960", "1970", "1980", "1990", "2000", "2010", "2020"],
+				datasets: [{
+					label: 'Nuclear Technology Changes',
+					data: [0, 5, 10, 20, 30, 50, 100, 500, 1000, 2000, 4000, 8000, 16000],
+					backgroundColor: 'rgba(54, 162, 235, 0.2)',
+					borderColor: 'rgba(54, 162, 235, 1)',
+					borderWidth: 1,
+					pointRadius: 3,
+					pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+					pointBorderColor: '#fff',
+					pointHoverRadius: 5,
+					pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)',
+					pointHoverBorderColor: '#fff',
+					fill: false
+				}]
+				},
+			options: {
+				responsive: true,
+				title: {
+					display: false,
+					text: 'Changes in Nuclear Technology from 1900 to 2020'
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Year'
+						}
+					}],
+					yAxes: [{
+						type: 'logarithmic',
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Change in Technology'
+						},
+						ticks: {
+							callback: function(value, index, values) {
+								return Number(value.toString());
+							},
+							min: 1,
+							max: 100000,
+							autoSkip: true,
+							maxTicksLimit: 8
+						}
+					}]
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+			}
+		});
+        
+	</script>
+    <div class="container2">
+        <h1>Number of Nuclear Reactors from 1900 to 2020</h1>
+        <canvas id="myChart2"></canvas>
+        <p>Years</p>
+    </div>
+    <script>
+        var ctx = document.getElementById("myChart2").getContext('2d');
+        var myChart2 = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["1900", "1910", "1920", "1930", "1940", "1950", "1960", "1970", "1980", "1990", "2000", "2010", "2020"],
+                datasets: [{
+                    label: 'Number of Nuclear Reactors',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 443, 442],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    pointRadius: 3,
+                    pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: 'rgba(54, 162, 235, 1)',
+                    pointHoverBorderColor: '#fff',
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: false,
+                    text: 'Changes in Nuclear Reactors from 1900 to 2020'
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Years'
+                        }
+                    }],
+                    yAxes: [{
+                        type: 'linear',
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Number of Nuclear Reactors'
+                        },
+                        ticks: {
+                            beginAtZero: true,
+                            stepSize: 100,
+                            max: 500,
+                        }
+                    }]
+                },
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                hover: {
+                    mode: 'nearest',
+                    intersect: true
+                },
+            }
+        });
+    </script>
+
+	<div class="container3">
+		<h1>Nuclear Energy Used from 1900 to 2020 <br> (in TwH)</h1>
+		<canvas id="myChart3"></canvas><p>Years</p>
+		</div>
+		<script>
+		  var ctx = document.getElementById('myChart3').getContext('2d');
+		  var chart = new Chart(ctx, {
+			type: 'line',
+			data: {
+			  labels: ['1900', '1910', '1920', '1930', '1940', '1950', '1960', '1970', '1980', '1990', '2000', '2010', '2020'],
+			  datasets: [{
+				label: 'Nuclear Energy Used',
+				data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 150, 170],
+				backgroundColor: 'rgba(255, 99, 132, 0.2)',
+				borderColor: 'rgba(255, 99, 132, 1)',
+				borderWidth: 1
+			  }]
+			},
+			options: {
+			  scales: {
+				yAxes: [{
+				  ticks: {
+					beginAtZero: true
+				  }
+				}]
+			  }
+			}
+		  });
+		  
+		  // plot the given point
+		  chart.data.datasets[0].data[10] = 150;
+		  chart.update();
+		</script>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nuclear Science Quiz</title>
+</head>
+<style>
+	body{
+		background-image: url(https://media4.giphy.com/media/xUOxfjsW9fWPqEWouI/giphy.gif);
+	}
+    h1{
+        text-align: center;
+        color: blue;
+    }
+    form{
+        text-align: center;
+    }
+    .back{
+			width:75px ;
+			height: 35px;
+			border:2px solid #0e5079 ;
+			border-radius: 32px;
+			color:#0e5079;
+			background-color: white;
+			font-size: 25px;
+		}
+		.back:hover{
+			width:95;
+			height: 45;
+			
+			color: white;
+			background-color:#0e5079;
+			font-size: 30px;
+		}
+</style>
+<body>
+    <form>
+        <input class="back" type="button" value="&#8592" onclick="history.back()">
+        </form>
+	<div class="container" style="border: 1px solid black; width: 50%;margin: auto;margin-top: 5px;border-radius: 25px;  background-color: rgba(95, 216, 40, 0.774);">
+	<h1><u>Nuclear Science Quiz</u></h2>
+		<form style="font-size: 20px;">
+			<!-- Question 1 -->
+			<p>1. Name the moderator used in the nuclear reactor?</p>
+			<label><input type="radio" name="q1" value="A"> A. Plutonium</label><br>
+			<label><input type="radio" name="q1" value="B"> B. Thorium</label><br>
+			<label><input type="radio" name="q1" value="C"> C. Graphite</label><br>
+			<label><input type="radio" name="q1" value="D"> D. Beryllium</label><br><br>
+
+			<!-- Question 2 -->
+			<p>2. Which isotope of Uranium has the capacity to sustain the chain reaction?</p>
+			<label><input type="radio" name="q2" value="A"> A. U-230</label><br>
+			<label><input type="radio" name="q2" value="B"> B. U-235</label><br>
+			<label><input type="radio" name="q2" value="C"> C. U-245</label><br>
+			<label><input type="radio" name="q2" value="D"> D. U-225</label><br><br>
+
+			<!-- Question 3 -->
+			<p>3. Which of the following countries have nuclear weapons?</p>
+			<label><input type="radio" name="q3" value="A"> A. Libya</label><br>
+			<label><input type="radio" name="q3" value="B"> B. Israel</label><br>
+			<label><input type="radio" name="q3" value="C"> C. Both A and B</label><br>
+			<label><input type="radio" name="q3" value="D"> D. Neither A nor B</label><br><br>
+
+			<!-- Question 4 -->
+			<p>4. Which of the following atomic particle have a least mass?</p>
+			<label><input type="radio" name="q4" value="A"> A. Proton</label><br>
+			<label><input type="radio" name="q4" value="B"> B. Electron</label><br>
+			<label><input type="radio" name="q4" value="C"> C. Deuteron</label><br>
+			<label><input type="radio" name="q4" value="D"> D. Neutron</label><br><br>
+
+			<!-- Submit Button -->
+			<input type="button" value="Submit" onclick="checkAnswers()" style="width: 100px;height: 30px;border-radius: 30px;
+			color: white;background-color: blue;">
+		</form>
+	</div>
+	
+
+	<!-- Results Container -->
+	<div id="results"></div>
+
+	<!-- JavaScript Code -->
+	<script>
+		function checkAnswers() {
+			var q1 = document.querySelector('input[name="q1"]:checked').value;
+			var q2 = document.querySelector('input[name="q2"]:checked').value;
+			var q3 = document.querySelector('input[name="q3"]:checked').value;
+			var q4 = document.querySelector('input[name="q4"]:checked').value;
+
+			var correctAnswers = 0;
+
+			if (q1 === 'C') {
+				correctAnswers++;
+			}
+
+			if (q2 === 'B') {
+correctAnswers++;
+}
+if (q3 === 'C') {
+			correctAnswers++;
+		}
+
+		if (q4 === 'B') {
+			correctAnswers++;
+		}
+
+		var resultsContainer = document.getElementById('results');
+
+		resultsContainer.innerHTML = 'You got ' + correctAnswers + ' out of 4 questions correct.';
+	}
+</script>
+    
+</body>
+</html>

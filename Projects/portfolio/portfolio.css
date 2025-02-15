@@ -5,7 +5,7 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
 }
 body{
     background-color: #140439 !important;
@@ -24,6 +24,8 @@ li, a, button{
     background-clip: text;
     color: transparent;
 }
+
+
 header{
     position: fixed;
     height: 12%;
@@ -80,7 +82,7 @@ header a{
 }
 .colour-img{
     background-color: white;
-    width: 30px;
+    width: 40px;
     height: auto;
     border-radius: 50%;
     padding: 1px;
@@ -114,7 +116,7 @@ header a{
     position: fixed;
     top: 90%;
     right: 1%;
-    width: 40px;
+    width: 38px;
     border-radius: 50%;
     animation: HbtnAni 1s alternate-reverse 0.1ms infinite;
 }
@@ -127,8 +129,12 @@ header a{
     }
 }
 
+.section {
+    scroll-margin-top: 5px;
+  }
+
 .sec1{
-    margin-top: 100px;
+    margin-top: 160px;
     margin-bottom: 100px;
 }
 
@@ -358,7 +364,7 @@ header a{
 }
 
 .sec5{
-    width: 51%;
+    width: 49%;
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -388,7 +394,7 @@ header a{
 .Lbts{
     display: flex;
     align-items: center;
-    width: 13vw;
+    width: 15vw;
     margin: auto;
     justify-content: center;
     margin-top: 44px;
@@ -439,31 +445,21 @@ header a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     width: 60vw;
-    margin: 170px 0 30px 193px;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 15px;
 }
+footer p{
+    padding-left: 40px;
+}
+
 .social{
+    padding-right: 326px;
     width: 10%;
     display: flex;
     justify-content: space-around;

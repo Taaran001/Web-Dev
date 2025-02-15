@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nuclear Science Changes and Development</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <style>
+        canvas {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/p1639ay-goodss-160930.jpg);
+            padding-top: 50px;
+            height: 100%;
+
+        }
+
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            border: 2px solid #0A2A5B;
+            border-radius: 25px;
+        }
+
+        .menu li {
+            margin: 0;
+            padding: 0;
+            color: #050357f6;
+            cursor: pointer;
+            flex-grow: 1;
+            text-align: center;
+            background-color: #fff;
+            transition: color 0.2s ease-out, background-color 0.2s ease-out, border-radius 0.2s ease-out;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            font-size: 20px;
+        }
+
+        .menu li:hover {
+            color: #fff;
+            background-color: #28349e;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+        }
+
+
+
+        .menu a {
+            color: inherit;
+            display: block;
+            text-decoration: none;
+        }
+
+        .usesofNT {
+            color: #0077c2;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+            margin-top: 10px;
+            font-size: 36px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
+
+        .image-container {
+            margin-top: 5px;
+            border: 1px solid black;
+            padding: 5px;
+            /* decreased padding */
+            text-align: center;
+            height: 290px;
+            width: 308px;
+            float: right;
+            background-color: #808080;
+            border-radius: 20px;
+            margin-right: 5px;
+
+        }
+
+        .image {
+            border: 1px solid gray;
+            max-width: 100%;
+            border-radius: 10px;
+
+        }
+
+        .image-caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <ul class="menu">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="/project/graph.html">Graphs</a></li>
+        <li><a href="/project/NuclearHistory.html">History</a></li>
+        <li><a href="/project/3dmodel.html">3-D Model</a></li>
+        <li><a href="/project/quiz.html">Quiz</a></li>
+        <li><a href="/project/AboutUs.html">About Us</a></li>
+    </ul>
+    <div style="background-color: #fff;border: 2px solid black;border-radius: 80%;margin-left:50px;margin-right: 50px;">
+        <h1 style="padding-top: 10px;text-align: center;color: black;font-size: 36px;">What is Nuclear Technology?</h1>
+    </div>
+    <div class="image-container" style="margin-top:36px;">
+        <img src="https://cdn.britannica.com/03/72203-050-EA8220F7/intermediate-Top-Uranium-235-neutron-neutrons-process-tritium.jpg"
+            alt="Image" class="image" height="250px" width="350px">
+        <p class="image-caption">Nuclear Fission and Nuclear Fussion</p>
+    </div>
+    <div style="border: 2px solid black;border-radius: 20px;margin-top: 5px;background-color: #374791;">
+        <p style="text-align: left;margin-right: 320px;font-size: 20px;margin-left: 20px;color:white">Nuclear technology
+            involves the study and application of nuclear reactions and their effects on matter. It encompasses a wide
+            range of scientific disciplines, including nuclear physics, radiation science, and engineering. The most
+            well-known application of nuclear technology is in power generation. Nuclear power plants generate
+            electricity by harnessing the heat produced by nuclear fission, which involves the splitting of atomic
+            nuclei. This process generates a tremendous amount of energy, which is used to heat water and create steam
+            that drives turbines, which in turn generate electricity.<br><br>
+
+            However, nuclear technology has a range of other applications beyond power generation. One of its most
+            important uses is in medicine, where it is used in various forms of imaging, such as X-rays and CT scans. It
+            is also used in cancer treatment, where high-energy radiation is used to destroy cancer cells. Other medical
+            applications include the production of radioactive isotopes for diagnosis and treatment, as well as
+            research.<br><br>
+
+            Nuclear technology also has industrial applications, such as the production of radioactive materials for use
+            in manufacturing and research. In addition, it is used in a range of scientific applications, such as the
+            study of the properties of matter and the behavior of subatomic particles. <br><br>
+
+            Despite its many benefits, nuclear technology is also associated with risks and concerns. These include the
+            potential for nuclear accidents, as well as the risk of nuclear weapons proliferation. Nuclear waste, which
+            remains radioactive for thousands of years, is also a major concern, as it requires careful management and
+            disposal to avoid environmental damage and health risks.</p>
+    </div>
+    <div class="image-container"
+        style="margin-top: 155px;margin-right: 5px;border-top-right-radius: 15px;background-color: #808080;height:295px;">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-640458751.jpg?crop=1xw:0.75xh;center,top&resize=1200:*"
+            alt="Image" class="image" height="250px" width="350px">
+        <p class="image-caption" style="margin-bottom: 2px;">J. Robert Oppenheimer <br>"Father of Atomic Bomb"</p>
+    </div>
+    <div class="image-container"
+        style="margin-top: 155px;margin-right: 5px;border-top-right-radius: 15px;background-color: #808080;">
+        <img src="https://i.insider.com/5547d29b6bb3f7af6633ba2d?width=1136&format=jpeg" alt="Image" class="image"
+            height="250px" width="350px">
+        <p class="image-caption">First Nuclear Weapon</p>
+    </div>
+    <h1 class="usesofNT">Uses of Nuclear Technology:</h1>
+    <div
+        style="border: 2px solid black;background-color:#374791;border-radius: 20px;margin-top: 10;padding-left: 10px;">
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white;">-Nuclear technology has a wide
+            range of uses across various fields, including energy production, medicine, industry, agriculture, and
+            scientific research. Here are some of the most common uses:<br><br></p>
+        <a href="NuclearEnergyProduction.html"
+            style="text-align: left;;margin-right: 320px;font-size: 20px;color: lightskyblue;">Nuclear energy
+            production:</a>
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Nuclear power plants generate
+            electricity by using nuclear reactions to heat water and produce steam, which turns a turbine to produce
+            electricity. <br><br></p>
+
+        <a href="NuclearMedicine.html"
+            style="text-align: left;;margin-right: 320px;font-size: 20px;color: lightskyblue;">Nuclear medicine:</a>
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Radioactive isotopes are used in
+            medical imaging, such as positron emission tomography (PET) scans and gamma cameras, as well as in the
+            treatment of cancer.<br><br></p>
+
+
+        <a href="NuclearIndustrialApplications.html"
+            style="text-align: left;;margin-right: 320px;font-size: 20px;color: lightskyblue;">Industrial
+            applications:</a>
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Nuclear technology is used in a
+            variety of industrial processes, such as sterilizing medical equipment, detecting leaks in pipelines, and
+            measuring the thickness of materials.<br><br></p>
+
+        <a href="Agriculture.html"
+            style="text-align: left;;margin-right: 320px;font-size: 20px;color: lightskyblue;">Agriculture:</a>
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Nuclear techniques are used to
+            develop new crop varieties, increase crop yields, and control pests and diseases.<br><br></p>
+
+        <a href="ScientificResearch.html"
+            style="text-align: left;;margin-right: 320px;font-size: 20px;color: lightskyblue;">Scientific research:</a>
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Nuclear technology is used in
+            various fields of scientific research, including nuclear physics, materials science, and environmental
+            science.<br><br></p>
+
+        <a href="NuclearWeapons.html"
+            style="text-align: left;;margin-right: 320px;font-size: 20px;color: lightskyblue">Nuclear weapons:</a>
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Although nuclear weapons are
+            highly controversial and heavily regulated, they are a use of nuclear technology.<br><br></p>
+
+        <p style="text-align: left;;margin-right: 320px;font-size: 20px;color: white">-Overall, nuclear technology has
+            numerous beneficial applications, but it also poses significant safety and environmental risks that must be
+            carefully managed.</p>
+    </div>
+
+    <div class="imgAllcontainer" style="height: 315px;width:100%;margin-top: 20px;border-radius: 20px;">
+        <div class="image-container"
+            style="border-top-right-radius: 15px;background-color: #808080;float: left;margin-left: 35px;">
+            <img src="https://my.clevelandclinic.org/-/scassets/images/org/health/articles/4902-nuclear-medicine-imaging-2.jpg"
+                alt="Image" class="image" height="250px" width="350px">
+            <p class="image-caption">Nuclear Medicine Imaging</p>
+        </div>
+        <div class="image-container"
+            style="border-top-right-radius: 15px;background-color: #808080;float: left;width:455px;margin-left: 68px;">
+            <img src="https://www.iaea.org/sites/default/files/styles/original_image_size/public/ne-charts-1140x640.jpg?itok=tywG9Wzs"
+                alt="Image" class="image" height="250px" width="450px">
+            <p class="image-caption">Nuclear Energy Industrial use</p>
+        </div>
+        <div class="image-container"
+            style="border-top-right-radius: 15px;background-color: #808080;float: right;width:350px;margin-right: 25px;">
+            <img src="https://nuclear-power.com/wp-content/uploads/2014/11/inside_core.jpg" alt="Image" class="image"
+                height="250px" width="350px">
+            <p class="image-caption">Nuclear Reactor Core</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
