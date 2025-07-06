@@ -6,7 +6,7 @@
 // let c = "*"
 
 // let obj = {
-//     "+": "-",  
+//     "+": "-",
 //     "*": "+",
 //     "-": "/",
 //     "/": "**"
@@ -14,7 +14,7 @@
 
 // console.log(random);
 // if (random<0.1) {
-    
+
 // } else {
 //     c = obj[c]
 // }
@@ -41,7 +41,7 @@
 //     return result;
 //   };
 //   console.log(fac(6));
-  
+
 
 // const red = (a,b)=>{
 //     return a*b
@@ -59,7 +59,7 @@
 // const box = document.getElementsByClassName('box')
 
 // function getRandomColor(){
-//     // a + R (a-b) ---> 
+//     // a + R (a-b) --->
 //     let val1 = Math.ceil(0+Math.random()*255);
 //     let val2 = Math.ceil(0+Math.random()*255);
 //     let val3 = Math.ceil(0+Math.random()*255);
@@ -74,6 +74,29 @@
 
 
 
+document.getElementsByTagName("body")[0].style.backgroundColor = "Green"
+document.getElementsByTagName("body")[0].style.fontSize = "30px"
+
+const addItem = async (item) => {
+    await randomDelay()
+    let div = document.createElement("div")
+    div.innerHTML = item
+    document.body.append(div)
+}
+
+const randomDelay = () => {
+    return new Promise((resolve, reject) => {
+        timeout = 1 + 6 * Math.random();
+        setTimeout(() => {
+            resolve()
+        }, timeout * 1000);
+    })
+}
 
 
 
+
+let text = ["Initializing...", "Loading...", "Fetching...", "Processing...", "Done!"]
+for (const i of text){
+    addItem(i)
+}

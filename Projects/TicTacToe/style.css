@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: peru;
+    color: white;
+    height: 75px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.GContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    font-size: 6vw;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: none;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+.box:hover{
+    background-color: rgb(240, 228, 213);
+}
+
+.GInfo{
+    padding: 0 34px;
+    font-size: 25px;
+}
+.GInfo>div {
+    padding: 30px 220px;
+}
+#reset{
+    margin: 12px 15px;
+    padding: 1px 15px;
+    background-color: rgb(240, 228, 213);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Winner effect */
+.winner {
+    border-color: rgb(199, 150, 100) !important;
+    background-color: rgba(233, 216, 199, 0.648);
+    animation: winnerPulse 0.5s ease-in-out;
+}
+
+@keyframes winnerPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

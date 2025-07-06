@@ -1,0 +1,14 @@
+{
+  "name": "csv-zip-operations",
+  "version": "1.0.0",
+  "description": "CSV and ZIP file operations",
+  "main": "csv_operations.js",
+  "scripts": {
+    "start": "node csv_operations.js"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "archiver": "^5.3.1"
+  }
+}
