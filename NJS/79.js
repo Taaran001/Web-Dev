@@ -6,5 +6,4 @@ try {
     console.log("sum is ", sum*s);
 } catch (error) {
     console.log("Error");
-
 }
