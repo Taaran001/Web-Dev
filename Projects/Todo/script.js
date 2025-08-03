@@ -1,19 +1,20 @@
-    const inp = document.getElementById('inp');
+const inp = document.getElementById('inp');
     const todoList = document.getElementById("todos");
     const box = document.getElementById("box")
     let counter = 0
 
     function addTodo() {
         const inputEl = document.getElementById("inp");
-        const textNode = document.createElement("li");
         const trimed = inputEl.value.trim();
-        if (trimed.value == "" || trimed.value == null) {
+        if (trimed === "" || trimed === undefined) {
             return;
         }
+
+        const textNode = document.createElement("li");
         textNode.style.fontSize = "20px"
         textNode.style.marginTop = "10px"
         textNode.style.listStyleType = "none"
-        console.log(textNode);
+        // console.log(textNode);
 
 
         textNode.innerHTML = `<div class='todolists' id='todo-${counter}'>
@@ -30,6 +31,9 @@
 
     function deleteTodo(index) {
         const element = document.getElementById("todo-" + index);
-        element.parentNode.removeChild(element);
-    }
+        element.parentNode.parentNode.removeChild(element.parentNode);
 
+        // element.parentNode.removeChild(element);
+        // console.log(element);
+
+    }
