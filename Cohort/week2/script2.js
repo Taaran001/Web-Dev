@@ -167,6 +167,3 @@
 //     setTimeout(updater, 1000);
 // }
 // updater()
-
-
-

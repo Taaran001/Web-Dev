@@ -129,7 +129,7 @@ let users = [
 ]
 
 function getEligibleUsers(age) {
-    for (let i= 0; i<users.length ; i++) {
+    for (let i= 0; i<users.length; i++) {
         // console.log(users[i]);
         if (users[i].age >= 18 && users[i].gender == "male") {
             console.log((users[i]));
@@ -138,6 +138,3 @@ function getEligibleUsers(age) {
 }
 getEligibleUsers()
 */
-
-
-
