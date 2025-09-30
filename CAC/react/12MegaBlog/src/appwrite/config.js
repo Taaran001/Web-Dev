@@ -10,8 +10,8 @@ export class Service {
         this.client
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
-            this.databases = new Databases(this.client)
-            this.client = new Storage(this.client)
+        this.databases = new Databases(this.client)
+        this.bucket = new Storage(this.client)
     }
 
     async createPost({title, slug, content, featuredImage, status, userId}){
@@ -121,7 +121,7 @@ export class Service {
     getFilePreview(fileId){
         return this.bucket.getFilePreview(
             conf.appwriteBucketId,
-            fileId
+            fileId,
         )
     }
 }

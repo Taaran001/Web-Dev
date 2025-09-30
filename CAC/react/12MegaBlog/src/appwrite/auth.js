@@ -7,6 +7,13 @@ export class AuthService {
     account;
 
     constructor(){
+        // if (!conf.appwriteUrl) {
+        //     throw new Error('Appwrite URL not found. Please check your .env file');
+        // }
+        // if (!conf.appwriteProjectId) {
+        //     throw new Error('Appwrite Project ID not found. Please check your .env file');
+        // }
+
         this.client
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
@@ -30,6 +37,7 @@ export class AuthService {
         try {
             return await this.account.createEmailPasswordSession(email, password)
         } catch (error) {
+            console.log("Appwrite service :: login :: error", error);
             throw error
         }
     }
@@ -49,11 +57,11 @@ export class AuthService {
             return await this.account.deleteSessions();
         } catch (error) {
             console.log("Appwrite service :: logout :: error", error);
-
+            return null;
         }
     }
 }
 
-const authService = new AuthService()
+const authService = new AuthService();
 
-export default AuthService
+export default authService
