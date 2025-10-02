@@ -1,0 +1,3 @@
+useState - used to change the values
+useEffect - runs side effect on specifc ui change
+useRef - 
