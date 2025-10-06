@@ -1,11 +1,11 @@
 {
   "python-envs.pythonProjects": [
     {
-      "path": "CAC/react/12MegaBlog/src",
-      "envManager": "ms-python.python:venv",
-      "packageManager": "ms-python.python:pip"
+        "path": "CAC/react/12MegaBlog/src",
+        "envManager": "ms-python.python:venv",
+        "packageManager": "ms-python.python:pip"
     }
-  ],
+],
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
