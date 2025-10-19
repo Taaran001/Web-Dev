@@ -17,10 +17,42 @@ function App() {
                 if (response.status === 404) {
                     setError('No profile with this username')
                     setUser(null)
+                    setRepos([])
+                    return;
                 }
+                throw new Error("Failed to fetch user");
             }
-        } catch (error) {
 
+            const userData = await response.json()
+            setUser(userData)
+            setError('')
+            fetchReops(searchUsername)
+        } catch (err) {
+            setError('Problem fetching user')
+            setUser(null)
+            setRepos([])
+        }
+    }
+
+    const fetchReops = async (searchUsername) => {
+        try {
+            const response = await fetch(`https://api.github.com/users/${searchUsername}/repos?sort=created`)
+
+            if (response.ok) {
+                throw new Error("Failed to fetch reops");
+            }
+
+            const reposData = await response.json()
+            setRepos(reposData.slice(0,10))
+        } catch (err) {
+            setError("Problem fetching repos")
+        }
+    }
+
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+        if (username.trim()) {
+            fetchUser(username.trim())
         }
     }
 
