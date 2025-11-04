@@ -14,7 +14,6 @@ function App() {
         })
         .catch((error)=>{
             console.log(error);
-
         })
     })
 
@@ -22,6 +21,7 @@ function App() {
         <>
             <h1>Hello This is Taaran</h1>
             <p>JOKES: {jokes.length}</p>
+            
             {
                 jokes.map((joke, index) => (
                     <div key={joke.id}>

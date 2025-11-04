@@ -11,7 +11,7 @@ app.get('/api/jox',(req,res)=>{
     const jox = [
         {
             id:1,
-            title: 'A joke',
+            title: 'A joke', 
             content: 'This is a joke'
         },
         {
