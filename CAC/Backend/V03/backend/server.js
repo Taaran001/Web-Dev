@@ -1,17 +1,20 @@
 import express from "express"
+import cors from 'express'
 
 const app = express()
+
+app.use(cors())
 
 // app.get('/',(req,res)=>{
 //     res.send('server is ready')
 // } )
 
 //joxx
-app.get('/api/jox',(req,res)=>{
-    const jox = [
+app.get('/api/jokes',(req,res)=>{
+    const jokes = [
         {
             id:1,
-            title: 'A joke', 
+            title: 'A joke',
             content: 'This is a joke'
         },
         {
@@ -27,7 +30,7 @@ app.get('/api/jox',(req,res)=>{
         {
             id:4,
             title: 'A 4th joke',
-            content: 'This is a 5th joke'
+            content: 'This is a 4th joke'
         },
         {
             id:5,
@@ -36,7 +39,7 @@ app.get('/api/jox',(req,res)=>{
         },
     ]
 
-    res.send(jox)
+    res.send(jokes)
 })
 
 const port = process.env.PORT || 3000
