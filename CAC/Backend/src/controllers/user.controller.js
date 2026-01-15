@@ -163,7 +163,7 @@ const loginUser = asyncHandler(async (req, res) => {
     //6
     const options = {
         httpOnly: true,
-        secure: true
+        secure: false,
     }
 
 
@@ -195,10 +195,13 @@ const logoutUser = asyncHandler(async (req, res) => {
 
     const options = {
         httpOnly: true,
-        secure: false
+        secure: false,
     }
 
-    return res.status(200).clearCookie("accessToken", options).clearCookie("refreshToken", options).json(new ApiResponse(200, {}, "User logged out"))
+    return res.status(200)
+    .clearCookie("accessToken", options)
+    .clearCookie("refreshToken", options)
+    .json(new ApiResponse(200, {}, "User logged out"))
 })
 
 
@@ -208,6 +211,3 @@ export {
     loginUser,
     logoutUser
 }
-
-
-
