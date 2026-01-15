@@ -44,7 +44,7 @@ const userSchema = new Schema(
     },
     refreshToken: {
         type: String
-    }   
+    }
 }, {timestamps: true}
 )
 
@@ -66,7 +66,7 @@ userSchema.methods.generateAccessToken = async function (){
             username: this.username,
             fullName: this.fullName
         },
-        process.env.ACCESS_TOKEN_SECERT,
+        process.env.ACCESS_TOKEN_SECRET,
         {
             expiresIn: process.env.ACCESS_TOKEN_EXPIRY
         }
@@ -77,7 +77,7 @@ userSchema.methods.generateRefreshToken = async function (){
         {
             _id: this._id,
         },
-        process.env.REFRESH_TOKEN_SECERT,
+        process.env.REFRESH_TOKEN_SECRET,
         {
             expiresIn: process.env.REFRESH_TOKEN_EXPIRY
         }
