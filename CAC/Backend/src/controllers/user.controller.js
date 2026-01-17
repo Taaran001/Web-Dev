@@ -1,4 +1,3 @@
-import { response } from "express";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { User } from "../models/user.model.js";
@@ -157,6 +156,9 @@ const loginUser = asyncHandler(async (req, res) => {
     const loggedInUser = await User.findById(user._id).select(
         "-password -refreshToken"
     )
+
+    console.log("access tokens: ",accessToken);
+    console.log("refresh tokens:",refreshToken);
 
 
 
