@@ -43,25 +43,19 @@ import jwt from "jsonwebtoken";
 
 export const verifyJWT = asyncHandler(async (req, _, next) => {
     try {
-        let token = req.cookies?.accessToken;
+        const token = req.cookies?.accessToken
+        req.header("Authorization")?.replace("Bearer ","");
 
-        // If no cookie, try header as fallback
-        if (!token && req.header("Authorization")?.startsWith("Bearer ")) {
-            token = req.header("Authorization").split(" ")[1];
-        }
+        console.log(`accessing token ${JSON.stringify(token)}`) // iska log behjo
+        console.log(`token type: ${typeof token}`) // iska log behjo
 
         if (!token) {
             throw new ApiError(401, "Unauthorized request - No token provided");
         }
 
-        if (typeof token !== "string" || !token.includes('.')) {
-            throw new ApiError(401, "Invalid token format");
-        }
-
-        // Your debug logs here...
-        console.log("=== JWT DEBUG ===");
-        console.log("Final token value:", token.substring(0, 20) + "..."); // don't log full token in prod
-        console.log("Token length:", token.length);
+        // if (typeof token !== "string"  !token.includes('.')) {
+        //     throw new ApiError(401, "Invalid token format");
+        // }
 
         const decodedToken = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
 
